@@ -1,6 +1,6 @@
 cmake_minimum_required (VERSION 3.15)
 
-project(tool_lib_name CXX)
+project(core_lib CXX)
 foreach(dirname ${CMAKE_CURRENT_SOURCE_DIR})
     file(GLOB_RECURSE SRC RELATIVE ${CMAKE_CURRENT_SOURCE_DIR}
             "${dirname}/*.h"

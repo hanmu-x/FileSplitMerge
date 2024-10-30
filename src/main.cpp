@@ -1,8 +1,7 @@
 
-//#include "tool_dir_name/project.h"
-//#include "tool_dir_name/config.hpp"
 
-#include <boost/timer.hpp> // 计时函数
+
+//#include <boost/timer.hpp> // 计时函数
 
 #include <filesystem>
 #include <fstream>
@@ -229,8 +228,8 @@ int main()
 
     std::string mergedFileName = "E:/11_ReadFile/123.tif";
 
-    boost::timer tm1; // 定义后计时开始
-    tm1.restart();  // 从新从这里开始计时
+    //boost::timer tm1; // 定义后计时开始
+    //tm1.restart();  // 从新从这里开始计时
 
     std::string inputFile = "D:/1_wangyingjie/readfile/split/ETOPO.tif";
     std::string outputDir = "D:/1_wangyingjie/readfile/split/ETOPO_chunk";
@@ -248,7 +247,7 @@ int main()
 
 
 
-    tm1.restart();  // 从新从这里开始计时
+    //tm1.restart();  // 从新从这里开始计时
     //bool me = mergeFiles(outputDir, mergedFileName);
     bool me = mergeFiles(outputDir);  // 合并
     if (me)
@@ -259,7 +258,7 @@ int main()
     {
         std::cout << "mergeFiles failed" << std::endl;
     }
-    std::cout << tm1.elapsed() << std::endl;  // 单位是秒
+    //std::cout << tm1.elapsed() << std::endl;  // 单位是秒
     return 0;
 }
 
